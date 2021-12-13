@@ -1,0 +1,86 @@
+*{padding: 0;margin: 0;}
+header{height: 100px;width: 100%;
+background-image: linear-gradient(to right,#3f3e3e,#f36868);}
+aside{float:left;width: 30%;height:100%;text-align: center;
+background-color: #ffff;}
+aside img{width:90%;}
+.aside-title{margin:15px 25px;font-weight: bold;color:tomato;
+border-bottom:#ff6347 solid 3px;}
+#contact-box{width: 80%;display:flex;justify-content:center;
+             padding:auto;margin: auto;}
+#contact-box img{width: 50%;padding-bottom: 10px;}
+#contact-box img:hover{border-bottom: tomato solid 4px;width: 60%;}
+.art{display:flex;justify-content: center;align-items: center;
+    width: 70%;height:800px;float: right;}
+.about{transform: rotate(-7deg);text-align: center;
+       padding: 20px;width:500px;height:250px;
+       background-color: rgb(198, 253, 253);
+       box-shadow: 18px 18px rgb(168, 165, 165);}
+.about h2{font-size: 24px;color: tomato;}
+.about h1{font-size: 27px;color: tomato;
+          border-bottom: tomato 3px solid;}
+.signature{font-family:'Corinthia', cursive;
+          font-size:25px ; color:#0011ff;}
+.about p{font-size: 18px;color:#770404;}
+#logoBox{width: 200px;height: 100%;align-items: center;
+        display: flex;flex-wrap: wrap;justify-content: center;
+        float:right;background: #ffffff;padding:0 4px;}
+#title2{display: none;}
+#title {float: left;padding: 0 5px;font-size: 22px;text-decoration: none;
+        color: black;line-height: 1.5;align-items: center;}
+#logo {height:100px;border-radius: 50%;}
+#navPrt{width: 90%;text-align: center;}
+ul{display: flex;flex-flow: row;}
+
+#navPrt li .nav-a {text-decoration: none;color: white;
+                  font-size: 20px;font-weight: bold;
+                  display: inline-block;
+                }
+#navPrt li {display: inline-block;line-height: 100px;width: 20%;text-align: center;border-left: white 3px solid;}
+#navPrt .nav-a:hover,.drop-box a:hover{color: #070707;background: #fffefe;height: 100%;width: 100%;} 
+main{width: 100%;height: 800px;
+    background-color:rgb(245, 145, 145);
+    border-top: white solid 3px;
+    animation: chgclr 5s  0.5s  infinite alternate;}
+.drop-box{background-color:#882c2c ;position:absolute;z-index: 1;width:18%;}
+.drop-box a {display:block;text-decoration: none;color: white;
+    font-size: 20px;font-weight: bold;}
+.drop-box {display: none;} 
+.codes:hover .drop-box{display: block;} 
+/*=====================================================================================*/
+@media only screen and (max-width:958px) and (min-width:660px) {
+            aside{width:35%}
+           .art{width:65%}
+           .about{transform: rotate(0deg);box-shadow: none;height: 300px;}}
+/*====================================================================================*/
+@media only screen and (max-width:659px) {
+#title{display:none;}
+#title2{display: inline-flex;text-decoration-color:white;color: coral;}
+header{display:block;height:150px;width: 100%;}
+#logoBox{float:none;display: inline-flex;width: 100%;}
+#navPrt{width: 100%;height: 100px;display: inline-block;
+    background-image: linear-gradient(to right,#3f3e3e,#f36868);}
+main{position: relative;transform: translateY(100px);}
+aside{display:block;width: 100%;height: 520px;}
+.art{float:none;width: 100%;height: 300px;}
+.about{transform: rotate(0deg);height:350px;}}
+/*======================================================================================*/
+@media only screen and (max-width:479px) {
+    #logoBox{display: flex;justify-content: space-around;align-items: center;height: 103px;}
+    #title2{display: none;}
+    #title{display: inline-block;}
+    #navPrt li {display: block;}
+    .nav-a{font-size: 12px;}
+}
+/*======================================================================================*/
+@media only screen and (max-width:450px){
+    header{height: 628px;}
+ul{display:flex;flex-flow: column;height: 500px;align-items: center;}
+#navPrt li{text-align: center;border-left: none;border-bottom: white solid 3px;width: 100%;}
+.nav-a{border: none;}
+}
+/*======================================================================================*/
+@keyframes chgclr{0%{background-color:rgb(245, 145, 145);}
+25% {background-color: rgb(188, 210, 252);}
+50%{background-color:rgb(145, 233, 245);} 
+100%{background-color:rgb(243, 23, 23);}}
